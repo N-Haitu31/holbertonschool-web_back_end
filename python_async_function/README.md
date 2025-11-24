@@ -18,7 +18,7 @@ async marks a function as asynchronous.
 await is used in an async function to “pause” and wait for another async function to finish.
 
 # Example: Basic Async Program
-'''
+```
 python
 import asyncio
 
@@ -33,13 +33,13 @@ async def main():
     print("Finished")
 
 asyncio.run(main())
-'''
+```
 
 In this example, say_after waits and prints each message after a delay. Other tasks could run during the waits.
 
 # Example: Concurrent Tasks
 You can run multiple tasks at the same time:
-'''
+```
 python
 async def main():
     task1 = asyncio.create_task(say_after(1, "Hello"))
@@ -50,7 +50,7 @@ async def main():
     print("Finished")
 
 asyncio.run(main())
-'''
+```
 
 Here, both messages are scheduled together – making the program finish faster.
 
