@@ -1,11 +1,13 @@
-#!usr/bin/env python3
-"""Module providing a function to compute the mathematical floor of a float"""
-
+#!/usr/bin/env python3
+"""
+Module that contains a function which takes a float 'n'
+as argument and returns the floor of the float.
+"""
 import math
 
 
 def floor(n: float) -> int:
-    """Return the floor of the input floating-point number"""
-
-    # Use math.floor to compute the integer part (floor) of the float
+    """
+    Return the floor of the n.
+    """
     return math.floor(n)
