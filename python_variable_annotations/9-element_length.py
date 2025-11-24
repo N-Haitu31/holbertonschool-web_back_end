@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 """Module for computing the length of elements in an iterable of sequences"""
 
-from typing import Iterable, Sequence, List,Tuple
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
