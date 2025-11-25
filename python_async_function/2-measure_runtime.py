@@ -1,8 +1,7 @@
-#!/usr/br/env python3
+#!/usr/bin/env python3
 """Module for mesuring the average runtime of wait_n"""
 
 import time
-from typing import Callable
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
