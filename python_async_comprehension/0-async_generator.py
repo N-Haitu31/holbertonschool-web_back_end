@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module for ans asynchronous generator yielding random number"""
+"""Module for an asynchronous generator yielding random number"""
 
 import asyncio
 import random
@@ -12,12 +12,3 @@ async def async_generator():
     for _ in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
-
-
-async def test_gen():
-    result = []
-    async for val in async_generator():
-        result.append(val)
-    print(result)
-
-asyncio.run(test_gen())
