@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 """Module for asynchronous comprehension collecting random numbers"""
 
 from typing import List
