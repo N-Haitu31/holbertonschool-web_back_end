@@ -1,7 +1,7 @@
-#!usr/bin/env python3
-"""Module for listing all documents in a MonfoDB collection"""
-
-from typing import List
+#!/usr/bin/env python3
+"""
+A function that lists all documents in a collection:
+"""
 
 
 def list_all(mongo_collection):
