@@ -8,7 +8,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
         .filter((student) => student.location === city) // Filtre par ville
         .map((student) => {
             // Pour chaque étudiant, crée un nouvel objet
-            const gradeObj = newGrades.find((grade) => grade.studentID === student.id); // Cherche la nouvelle note
+            const gradeObj = newGrades.find((grade) => grade.studentId === student.id); // Cherche la nouvelle note
             return {
                 ...student, // Récupère toutes les propriétés de l'étudiant
                 grade: gradeObj ? gradeObj.grade : 'N/A' // Si une note existe, prends-la ; sinon, mets 'N/A'
