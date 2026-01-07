@@ -1,9 +1,9 @@
-const http = require('http');
+const http = require('node:http');
 
-const app = http.createServer((req, res) => {
-  res.statusCode = 200;            // Code HTTP 200 OK
-  res.setHeader('Content-Type', 'text/plain'); // Réponse en texte brut
-  res.end('Hello Holberton School!');          // Corps de la réponse
+const app = http.createServer((request, response) => {
+  response.setHeader('Content-type', 'text/plain');
+
+  response.end('Hello Holberton School!');
 });
 
 app.listen(1245);
