@@ -2,6 +2,7 @@ const express = require('express');
 const countStudents = require('./3-read_file_async');
 
 const app = express();
+const port = 1245;
 
 app.get('/', (req, res) => {
   res.set('Content-Type', 'text/plain');
@@ -17,7 +18,7 @@ app.get('/students', (req, res) => {
     .catch((err) => res.send(`This is the list of our students\n${err.message}`));
 });
 
-app.listen(1245, () => {
+app.listen(port, () => {
   console.log('Server running at http://localhost:1245/');
 });
 
